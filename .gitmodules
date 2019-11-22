@@ -1,0 +1,9 @@
+[submodule "include/ReHLDS"]
+	path = include/ReHLDS
+	url = https://github.com/dreamstalker/rehlds.git
+[submodule "include/ReGameDLL"]
+	path = include/ReGameDLL
+	url = https://github.com/s1lentq/ReGameDLL_CS.git
+[submodule "include/Metamod-R"]
+	path = include/Metamod-R
+	url = https://github.com/theAsmodai/metamod-r.git
