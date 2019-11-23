@@ -1,7 +1,7 @@
 project(Hello_world)        # Module name
 set(MAIN meta_api.cpp)      # Entry point
 
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.12)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_GENERATOR_PLATFORM Win32)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
@@ -37,7 +37,7 @@ target_include_directories(${PROJECT_NAME}
 
 
 if(CMAKE_CXX_COMPILER_ID MATCHES GNU)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -fvisibility=hidden -s -ffunction-sections -fdata-sections -fpermissive -Wno-write-strings -Wno-int-to-pointer-cast -Wno-unused-result -Wno-multichar -D_vsnprintf=vsnprintf")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden -s -ffunction-sections -fdata-sections -fpermissive -Wno-write-strings -Wno-int-to-pointer-cast -Wno-unused-result -Wno-multichar -D_vsnprintf=vsnprintf")
     set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g3")
     set(CMAKE_CXX_FLAGS_RELEASE "-Os -shared -s")
     set(CMAKE_CXX_FLAGS_MINSIZEREL "-Os -shared -s")
